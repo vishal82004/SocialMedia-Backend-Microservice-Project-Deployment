@@ -38,7 +38,7 @@ manifests/deployment copy.yaml
 # Terraform Files
 # ==============================
 # Local .terraform directories (HUGE binaries)
-.terraform/
+
 terraform/.terraform/
 terraform/.terraform/*
 terraform/.terraform/providers/**
