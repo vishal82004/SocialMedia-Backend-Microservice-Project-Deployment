@@ -1,3 +1,16 @@
 node_modules
 .env
 *.log
+manifests/app.yaml
+manifests/backup.yaml
+api-gateway/.env
+api-gateway/*.log
+identity-service/.env
+identity-service/*.log
+media-service/.env
+media-service/*.log
+post-service/.env
+post-service/*.log
+search-service/.env
+search-service/*.log
+manifests/deployment copy.yaml
