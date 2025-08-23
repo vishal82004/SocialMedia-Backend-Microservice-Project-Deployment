@@ -28,7 +28,7 @@ post-service/*.log
 search-service/*.log
 
 # ==============================
-# Kubernetes Manifests
+# Kubernetes Manifests (Sensitive Files)
 # ==============================
 manifests/app.yaml
 manifests/backup.yaml
@@ -37,18 +37,22 @@ manifests/deployment copy.yaml
 # ==============================
 # Terraform Files
 # ==============================
-# Local .terraform directories
+# Local .terraform directories (HUGE binaries)
 .terraform/
 terraform/.terraform/
+terraform/.terraform/*
+terraform/.terraform/providers/**
+
+# Terraform lock file
 terraform/.terraform.lock.hcl
 
-# State files
+# State files (sensitive)
 terraform.tfstate
 terraform.tfstate.backup
 terraform/*.tfstate
 terraform/*.tfstate.backup
 
-# Sensitive Output Files
+# Sensitive Variables
 *.tfvars
 *.tfvars.json
 
