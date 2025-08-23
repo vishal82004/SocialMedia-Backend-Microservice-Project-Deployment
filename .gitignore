@@ -1,16 +1,62 @@
-node_modules
+# ==============================
+# Node.js & NPM
+# ==============================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# ==============================
+# Environment Files
+# ==============================
 .env
+api-gateway/.env
+identity-service/.env
+media-service/.env
+post-service/.env
+search-service/.env
+
+# ==============================
+# Log Files
+# ==============================
 *.log
+api-gateway/*.log
+identity-service/*.log
+media-service/*.log
+post-service/*.log
+search-service/*.log
+
+# ==============================
+# Kubernetes Manifests
+# ==============================
 manifests/app.yaml
 manifests/backup.yaml
-api-gateway/.env
-api-gateway/*.log
-identity-service/.env
-identity-service/*.log
-media-service/.env
-media-service/*.log
-post-service/.env
-post-service/*.log
-search-service/.env
-search-service/*.log
 manifests/deployment copy.yaml
+
+# ==============================
+# Terraform Files
+# ==============================
+# Local .terraform directories
+.terraform/
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+
+# State files
+terraform.tfstate
+terraform.tfstate.backup
+terraform/*.tfstate
+terraform/*.tfstate.backup
+
+# Sensitive Output Files
+*.tfvars
+*.tfvars.json
+
+# ==============================
+# OS & Editor Files
+# ==============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
